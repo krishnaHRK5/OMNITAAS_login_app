@@ -10,7 +10,9 @@ const fs = require("fs");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://omnitaas-login-app-hrk.vercel.app"
+}));
 app.use(express.json());
 app.use(bodyParser.json());
 
